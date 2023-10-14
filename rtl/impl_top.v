@@ -1,14 +1,4 @@
-
-// 
 // Module: impl_top
-// 
-// Notes:
-// - Top level module to be used in an implementation.
-// - To be used in conjunction with the constraints/defaults.xdc file.
-// - Ports can be (un)commented depending on whether they are being used.
-// - The constraints file contains a complete list of the available ports
-//   including the chipkit/Arduino pins.
-//
 
 module impl_top (
 input               clk     , // Top level system clock input.
