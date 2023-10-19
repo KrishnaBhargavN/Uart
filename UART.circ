@@ -59,13 +59,17 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="32.0"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1020,1050)" name="Constant"/>
+    <comp lib="0" loc="(1020,1070)" name="Constant"/>
     <comp lib="0" loc="(1100,570)" name="Constant"/>
+    <comp lib="0" loc="(1120,1010)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1120,1030)" name="Constant"/>
+    <comp lib="0" loc="(1120,1060)" name="Clock"/>
     <comp lib="0" loc="(1380,460)" name="Tunnel">
       <a name="facing" val="south"/>
-      <a name="label" val="enabler"/>
-    </comp>
-    <comp lib="0" loc="(1550,870)" name="Tunnel">
       <a name="label" val="enabler"/>
     </comp>
     <comp lib="0" loc="(1670,430)" name="Pin">
@@ -75,13 +79,16 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(1710,1050)" name="Tunnel">
+      <a name="label" val="enabler"/>
+    </comp>
     <comp lib="0" loc="(1710,630)" name="Constant"/>
     <comp lib="0" loc="(1710,650)" name="Constant"/>
-    <comp lib="0" loc="(390,830)" name="Constant">
+    <comp lib="0" loc="(550,1010)" name="Constant">
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(390,850)" name="Constant"/>
-    <comp lib="0" loc="(400,880)" name="Clock"/>
+    <comp lib="0" loc="(550,1030)" name="Constant"/>
+    <comp lib="0" loc="(560,1060)" name="Clock"/>
     <comp lib="0" loc="(610,440)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PacketInput"/>
@@ -90,18 +97,15 @@
     <comp lib="0" loc="(720,460)" name="Pin">
       <a name="appearance" val="classic"/>
     </comp>
-    <comp lib="0" loc="(860,870)" name="Constant"/>
-    <comp lib="0" loc="(860,890)" name="Constant"/>
-    <comp lib="0" loc="(960,830)" name="Constant">
-      <a name="value" val="0x0"/>
+    <comp lib="4" loc="(1030,1020)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="1"/>
     </comp>
-    <comp lib="0" loc="(960,850)" name="Constant"/>
-    <comp lib="0" loc="(960,880)" name="Clock"/>
     <comp lib="4" loc="(1100,520)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="width" val="1"/>
     </comp>
-    <comp lib="4" loc="(1330,820)" name="Counter">
+    <comp lib="4" loc="(1490,1000)" name="Counter">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="Delay2"/>
       <a name="max" val="0xf"/>
@@ -112,33 +116,66 @@
       <a name="label" val="Enabler"/>
       <a name="width" val="1"/>
     </comp>
-    <comp lib="4" loc="(420,800)" name="Counter">
+    <comp lib="4" loc="(580,980)" name="Counter">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="Delay1"/>
       <a name="max" val="0xf"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="4" loc="(870,840)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
-      <a name="width" val="1"/>
+    <comp lib="8" loc="(1053,875)" name="Text">
+      <a name="font" val="SansSerif bold 23"/>
+      <a name="text" val="Delay Circuit"/>
+    </comp>
+    <comp lib="8" loc="(1126,1204)" name="Text">
+      <a name="text" val="Used to get a delay for reciever"/>
+    </comp>
+    <comp lib="8" loc="(1139,351)" name="Text">
+      <a name="color" val="#ff0000"/>
+      <a name="font" val="SansSerif bold 40"/>
+      <a name="text" val="Main Circuit"/>
+    </comp>
+    <comp lib="8" loc="(1223,787)" name="Text">
+      <a name="text" val="------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+    </comp>
+    <comp lib="8" loc="(1383,136)" name="Text">
+      <a name="font" val="SansSerif bold 24"/>
+      <a name="text" val="Instructions"/>
+    </comp>
+    <comp lib="8" loc="(1395,209)" name="Text">
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="text" val="2.Start the circuit by pressing 'ctrl+k'."/>
+    </comp>
+    <comp lib="8" loc="(1416,239)" name="Text">
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="text" val="3.You will recieve output in RecievedOutput"/>
+    </comp>
+    <comp lib="8" loc="(1443,177)" name="Text">
+      <a name="font" val="SansSerif plain 16"/>
+      <a name="text" val="1.Input the packet you want to send in PacketInput"/>
     </comp>
     <comp loc="(1050,550)" name="TX"/>
     <comp loc="(1670,430)" name="RX"/>
+    <wire from="(1020,1050)" to="(1030,1050)"/>
+    <wire from="(1020,1070)" to="(1030,1070)"/>
+    <wire from="(1020,1090)" to="(1020,1100)"/>
+    <wire from="(1020,1090)" to="(1030,1090)"/>
     <wire from="(1050,550)" to="(1100,550)"/>
+    <wire from="(1090,1050)" to="(1320,1050)"/>
     <wire from="(1090,590)" to="(1090,640)"/>
     <wire from="(1090,590)" to="(1100,590)"/>
     <wire from="(1090,640)" to="(1380,640)"/>
-    <wire from="(1150,880)" to="(1150,900)"/>
-    <wire from="(1150,900)" to="(1330,900)"/>
+    <wire from="(1120,1010)" to="(1480,1010)"/>
+    <wire from="(1120,1030)" to="(1330,1030)"/>
+    <wire from="(1120,1060)" to="(1310,1060)"/>
     <wire from="(1160,550)" to="(1280,550)"/>
-    <wire from="(1160,870)" to="(1160,890)"/>
-    <wire from="(1160,890)" to="(1330,890)"/>
-    <wire from="(1170,850)" to="(1170,870)"/>
-    <wire from="(1170,870)" to="(1330,870)"/>
     <wire from="(1280,420)" to="(1280,550)"/>
     <wire from="(1280,420)" to="(1450,420)"/>
-    <wire from="(1320,830)" to="(1320,850)"/>
-    <wire from="(1320,850)" to="(1330,850)"/>
+    <wire from="(1310,1060)" to="(1310,1080)"/>
+    <wire from="(1310,1080)" to="(1490,1080)"/>
+    <wire from="(1320,1050)" to="(1320,1070)"/>
+    <wire from="(1320,1070)" to="(1490,1070)"/>
+    <wire from="(1330,1030)" to="(1330,1050)"/>
+    <wire from="(1330,1050)" to="(1490,1050)"/>
     <wire from="(1380,460)" to="(1380,470)"/>
     <wire from="(1380,470)" to="(1380,640)"/>
     <wire from="(1380,470)" to="(1410,470)"/>
@@ -148,9 +185,11 @@
     <wire from="(1420,470)" to="(1450,470)"/>
     <wire from="(1420,550)" to="(1690,550)"/>
     <wire from="(1450,420)" to="(1450,430)"/>
-    <wire from="(1520,870)" to="(1550,870)"/>
+    <wire from="(1480,1010)" to="(1480,1030)"/>
+    <wire from="(1480,1030)" to="(1490,1030)"/>
     <wire from="(1670,570)" to="(1670,680)"/>
     <wire from="(1670,680)" to="(1710,680)"/>
+    <wire from="(1680,1050)" to="(1710,1050)"/>
     <wire from="(1690,530)" to="(1690,550)"/>
     <wire from="(1690,530)" to="(1780,530)"/>
     <wire from="(1710,630)" to="(1720,630)"/>
@@ -158,25 +197,17 @@
     <wire from="(1710,670)" to="(1710,680)"/>
     <wire from="(1710,670)" to="(1720,670)"/>
     <wire from="(1780,530)" to="(1780,630)"/>
-    <wire from="(390,830)" to="(420,830)"/>
-    <wire from="(390,850)" to="(420,850)"/>
-    <wire from="(400,880)" to="(420,880)"/>
+    <wire from="(550,1010)" to="(580,1010)"/>
+    <wire from="(550,1030)" to="(580,1030)"/>
+    <wire from="(560,1060)" to="(580,1060)"/>
     <wire from="(610,440)" to="(830,440)"/>
-    <wire from="(610,850)" to="(760,850)"/>
     <wire from="(720,460)" to="(820,460)"/>
-    <wire from="(760,850)" to="(760,920)"/>
-    <wire from="(760,920)" to="(860,920)"/>
+    <wire from="(770,1030)" to="(920,1030)"/>
     <wire from="(820,460)" to="(820,570)"/>
     <wire from="(820,570)" to="(830,570)"/>
     <wire from="(830,440)" to="(830,550)"/>
-    <wire from="(860,870)" to="(870,870)"/>
-    <wire from="(860,890)" to="(870,890)"/>
-    <wire from="(860,910)" to="(860,920)"/>
-    <wire from="(860,910)" to="(870,910)"/>
-    <wire from="(930,870)" to="(1160,870)"/>
-    <wire from="(960,830)" to="(1320,830)"/>
-    <wire from="(960,850)" to="(1170,850)"/>
-    <wire from="(960,880)" to="(1150,880)"/>
+    <wire from="(920,1030)" to="(920,1100)"/>
+    <wire from="(920,1100)" to="(1020,1100)"/>
   </circuit>
   <circuit name="FSM">
     <a name="appearance" val="logisim_evolution"/>
@@ -287,6 +318,43 @@
     <comp lib="4" loc="(1130,530)" name="Shift Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="length" val="6"/>
+    </comp>
+    <comp lib="8" loc="(1040,422)" name="Text">
+      <a name="font" val="SansSerif bold 24"/>
+      <a name="text" val="Finite State Machine"/>
+    </comp>
+    <comp lib="8" loc="(1563,572)" name="Text">
+      <a name="text" val="Ready "/>
+    </comp>
+    <comp lib="8" loc="(1566,786)" name="Text">
+      <a name="text" val="Reset"/>
+    </comp>
+    <comp lib="8" loc="(1584,733)" name="Text">
+      <a name="text" val="DOUT_VLD"/>
+    </comp>
+    <comp lib="8" loc="(1610,629)" name="Text">
+      <a name="text" val="Enabler for CNT3"/>
+    </comp>
+    <comp lib="8" loc="(1612,678)" name="Text">
+      <a name="text" val="Enabler for CNT4"/>
+    </comp>
+    <comp lib="8" loc="(463,558)" name="Text">
+      <a name="text" val="Data Input"/>
+    </comp>
+    <comp lib="8" loc="(464,660)" name="Text">
+      <a name="text" val="CNT4 Carry"/>
+    </comp>
+    <comp lib="8" loc="(466,610)" name="Text">
+      <a name="text" val="CNT3 Carry"/>
+    </comp>
+    <comp lib="8" loc="(468,757)" name="Text">
+      <a name="text" val="Reset Input"/>
+    </comp>
+    <comp lib="8" loc="(469,709)" name="Text">
+      <a name="text" val="Clock Pulse"/>
+    </comp>
+    <comp lib="8" loc="(956,928)" name="Text">
+      <a name="text" val="We are using this for controlling the enabler for our CNT3 and CNT4, using a shift register we are able to achieve it"/>
     </comp>
     <wire from="(1060,570)" to="(1130,570)"/>
     <wire from="(1070,550)" to="(1070,750)"/>
@@ -568,6 +636,10 @@
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="Allow only stable CLR"/>
     </comp>
+    <comp lib="8" loc="(953,51)" name="Text">
+      <a name="font" val="SansSerif bold 23"/>
+      <a name="text" val="Reciever Circuit"/>
+    </comp>
     <comp loc="(1150,540)" name="FSM"/>
     <wire from="(100,270)" to="(150,270)"/>
     <wire from="(1000,280)" to="(1000,330)"/>
@@ -785,7 +857,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="TX"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="4.0"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(100,500)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DIN"/>
@@ -951,6 +1023,10 @@
     <comp lib="8" loc="(1365,1315)" name="Text">
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="Allow only stable CLR"/>
+    </comp>
+    <comp lib="8" loc="(831,133)" name="Text">
+      <a name="font" val="SansSerif bold 23"/>
+      <a name="text" val="Transmitter Circuit"/>
     </comp>
     <comp lib="8" loc="(890,1110)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
