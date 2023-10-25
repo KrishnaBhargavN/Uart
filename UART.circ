@@ -122,36 +122,36 @@
       <a name="max" val="0xf"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="8" loc="(1053,875)" name="Text">
+    <comp lib="8" loc="(1050,875)" name="Text">
       <a name="font" val="SansSerif bold 23"/>
       <a name="text" val="Delay Circuit"/>
     </comp>
-    <comp lib="8" loc="(1126,1204)" name="Text">
+    <comp lib="8" loc="(1125,1200)" name="Text">
       <a name="text" val="Used to get a delay for reciever"/>
     </comp>
-    <comp lib="8" loc="(1139,351)" name="Text">
-      <a name="color" val="#ff0000"/>
-      <a name="font" val="SansSerif bold 40"/>
-      <a name="text" val="Main Circuit"/>
-    </comp>
-    <comp lib="8" loc="(1223,787)" name="Text">
-      <a name="text" val="------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
-    </comp>
-    <comp lib="8" loc="(1383,136)" name="Text">
+    <comp lib="8" loc="(1155,175)" name="Text">
       <a name="font" val="SansSerif bold 24"/>
       <a name="text" val="Instructions"/>
     </comp>
-    <comp lib="8" loc="(1395,209)" name="Text">
+    <comp lib="8" loc="(1161,251)" name="Text">
       <a name="font" val="SansSerif plain 16"/>
       <a name="text" val="2.Start the circuit by pressing 'ctrl+k'."/>
     </comp>
-    <comp lib="8" loc="(1416,239)" name="Text">
+    <comp lib="8" loc="(1187,284)" name="Text">
       <a name="font" val="SansSerif plain 16"/>
       <a name="text" val="3.You will recieve output in RecievedOutput"/>
     </comp>
-    <comp lib="8" loc="(1443,177)" name="Text">
+    <comp lib="8" loc="(1205,220)" name="Text">
       <a name="font" val="SansSerif plain 16"/>
       <a name="text" val="1.Input the packet you want to send in PacketInput"/>
+    </comp>
+    <comp lib="8" loc="(1220,785)" name="Text">
+      <a name="text" val="------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+    </comp>
+    <comp lib="8" loc="(725,180)" name="Text">
+      <a name="color" val="#ff0000"/>
+      <a name="font" val="SansSerif bold 40"/>
+      <a name="text" val="Main Circuit"/>
     </comp>
     <comp loc="(1050,550)" name="TX"/>
     <comp loc="(1670,430)" name="RX"/>
@@ -319,41 +319,41 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="length" val="6"/>
     </comp>
-    <comp lib="8" loc="(1040,422)" name="Text">
+    <comp lib="8" loc="(1040,420)" name="Text">
       <a name="font" val="SansSerif bold 24"/>
       <a name="text" val="Finite State Machine"/>
     </comp>
-    <comp lib="8" loc="(1563,572)" name="Text">
+    <comp lib="8" loc="(1560,570)" name="Text">
       <a name="text" val="Ready "/>
     </comp>
-    <comp lib="8" loc="(1566,786)" name="Text">
+    <comp lib="8" loc="(1565,785)" name="Text">
       <a name="text" val="Reset"/>
     </comp>
-    <comp lib="8" loc="(1584,733)" name="Text">
+    <comp lib="8" loc="(1580,730)" name="Text">
       <a name="text" val="DOUT_VLD"/>
     </comp>
-    <comp lib="8" loc="(1610,629)" name="Text">
+    <comp lib="8" loc="(1610,625)" name="Text">
       <a name="text" val="Enabler for CNT3"/>
     </comp>
-    <comp lib="8" loc="(1612,678)" name="Text">
+    <comp lib="8" loc="(1610,675)" name="Text">
       <a name="text" val="Enabler for CNT4"/>
     </comp>
-    <comp lib="8" loc="(463,558)" name="Text">
+    <comp lib="8" loc="(460,555)" name="Text">
       <a name="text" val="Data Input"/>
     </comp>
-    <comp lib="8" loc="(464,660)" name="Text">
+    <comp lib="8" loc="(460,660)" name="Text">
       <a name="text" val="CNT4 Carry"/>
     </comp>
-    <comp lib="8" loc="(466,610)" name="Text">
+    <comp lib="8" loc="(465,610)" name="Text">
       <a name="text" val="CNT3 Carry"/>
     </comp>
-    <comp lib="8" loc="(468,757)" name="Text">
-      <a name="text" val="Reset Input"/>
-    </comp>
-    <comp lib="8" loc="(469,709)" name="Text">
+    <comp lib="8" loc="(465,705)" name="Text">
       <a name="text" val="Clock Pulse"/>
     </comp>
-    <comp lib="8" loc="(956,928)" name="Text">
+    <comp lib="8" loc="(465,755)" name="Text">
+      <a name="text" val="Reset Input"/>
+    </comp>
+    <comp lib="8" loc="(955,925)" name="Text">
       <a name="text" val="We are using this for controlling the enabler for our CNT3 and CNT4, using a shift register we are able to achieve it"/>
     </comp>
     <wire from="(1060,570)" to="(1130,570)"/>
@@ -636,7 +636,7 @@
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="Allow only stable CLR"/>
     </comp>
-    <comp lib="8" loc="(953,51)" name="Text">
+    <comp lib="8" loc="(950,50)" name="Text">
       <a name="font" val="SansSerif bold 23"/>
       <a name="text" val="Reciever Circuit"/>
     </comp>
@@ -1024,7 +1024,7 @@
       <a name="font" val="SansSerif bold 14"/>
       <a name="text" val="Allow only stable CLR"/>
     </comp>
-    <comp lib="8" loc="(831,133)" name="Text">
+    <comp lib="8" loc="(830,130)" name="Text">
       <a name="font" val="SansSerif bold 23"/>
       <a name="text" val="Transmitter Circuit"/>
     </comp>
