@@ -49,8 +49,19 @@ In conclusion, the proposed project endeavors to reinvigorate UART technology, a
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
-
+  
+  Main: 
   ![image](main.png)
+  
+  Reciever:
+  ![image](RX.png)
+  
+  Transmitter:
+  ![image](TX.png)
+  
+  FSM:
+  ![image](FSM.png)
+
   > 
 </details>
 
