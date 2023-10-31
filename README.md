@@ -589,7 +589,7 @@ Trasnmitter:
 </details>
 
 <!-- Sixth Section -->
-## Verilog Code
+## References
 <details>
   <summary>Detail</summary>
 
