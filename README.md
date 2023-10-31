@@ -179,7 +179,7 @@ In summary, `uart_rx.v` stands as a testament to effective digital communication
   
   
   endmodule
-
+```
 </details>
 
 <!-- Sixth Section -->
