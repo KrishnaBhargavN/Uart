@@ -101,6 +101,7 @@ In summary, `uart_rx.v` stands as a testament to effective digital communication
 <details>
   <summary>Detail</summary>
   Main:
+  
   ```
     // Module: impl_top
   
