@@ -50,6 +50,7 @@ In conclusion, the proposed project endeavors to reinvigorate UART technology, a
 <details>
   <summary>Detail</summary>
 
+  ![image](main.png)
   > 
 </details>
 
