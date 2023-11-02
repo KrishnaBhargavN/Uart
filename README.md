@@ -82,16 +82,16 @@ In summary, `uart_rx.v` stands as a testament to effective digital communication
   <summary>Detail</summary>
   
   Main: 
-  ![image](main.png)
+  ![image](Snapshots/main.png)
   
   Reciever:
-  ![image](RX.png)
+  ![image](Snapshots/RX.png)
   
   Transmitter:
-  ![image](TX.png)
+  ![image](Snapshots/TX.png)
   
   FSM:
-  ![image](FSM.png)
+  ![image](Snapshots/FSM.png)
 
   > 
 </details>
