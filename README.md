@@ -21,6 +21,8 @@
 <details>
   <summary>Detail</summary>
   
+
+
  
 In the realm of embedded systems and digital communication, the Universal Asynchronous Receiver/Transmitter (UART) stands as a foundational technology, facilitating the seamless exchange of serial data between devices. This abstract introduces a project focused on designing an advanced UART interface with a motivation rooted in the ever-increasing need for efficient and reliable data transmission.
  
@@ -41,6 +43,9 @@ In conclusion, the proposed project endeavors to reinvigorate UART technology, a
 ## Working
 <details>
   <summary>Detail</summary>
+
+
+  
   The `impl_top.v` module orchestrates the integration of the UART communication system, combining the `uart_rx` and `uart_tx` modules into a cohesive digital ecosystem. Positioned as the top-level module, it encapsulates the interaction between the two modules and the external environment.
  
 At its core, the module interfaces with the physical world through signals such as `clk`, `sw_0`, `uart_rxd`, `uart_txd`, and `led`. The `clk` signal represents the system clock, a fundamental synchronizing element in digital systems. Slide switches `sw_0` and `sw_1` introduce an interactive element, allowing users to influence the behavior of the system, showcasing the flexibility of the design.
