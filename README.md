@@ -1,3 +1,5 @@
+md.linkify.set({ fuzzyLink: false }); 
+
 # Universal Asynchronous Receiver Transmitter
 
 <!-- First Section -->
