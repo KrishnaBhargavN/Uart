@@ -1,4 +1,4 @@
-# Universal Asynchronous Receiver Transmitter
+# Universal Asynchronous Receiver Transmitter "markdown.preview.linkify": false
 
 <!-- First Section -->
 ## Team 1
